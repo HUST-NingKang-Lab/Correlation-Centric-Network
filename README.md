@@ -95,7 +95,18 @@ where the first column is the source vertex, the second is the target vertex and
 
 Each number represents one species, and the correlation between species and numbers are stored in file 14dry_name.txt
 
+for the output file
+the input file is a three-column table like:
+0	1	0.140351
+0	2	0
+0	3	0.157895
+0	4	0.0619195
+...	...
+where the first column is the source vertex, the second is the target vertex and the last is the edge weight. 
+the third line is the predicted correlation coefficient
+
 Note that the vertices in the line graph are again numbered from 0 in the order of the edges in the input file. 
+
 
 
 ```
