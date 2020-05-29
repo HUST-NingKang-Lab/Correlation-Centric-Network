@@ -82,14 +82,21 @@ Weighted with self-loops
 
 For example try:
  
-correlationcenticnetwork -i example/14_dry.txt -o 14dry_linegraph -t 3
+correlationcenticnetwork -i ./example/14_dry.txt -o ./14dry_linegraph -t 3
 
 the output file and the speices name of members of SCN is also provided in example file.
+the input file is a two-column table like:
+0	1
+3	4
+0	15
+...	...
 
 where the first column is the source vertex, the second is the target vertex and the last is the edge weight. 
+
+Each number represents one species, and the correlation between species and numbers are stored in file 14dry_name.txt
+
 Note that the vertices in the line graph are again numbered from 0 in the order of the edges in the input file. 
-Thus edge (0,1) in the input file for graph G is vertex 0 in the output file for D(G), 
-while edge (3,4) in the input file for graph G is vertex 5 in the output file for D(G). 
+
 
 ```
 
